@@ -8,41 +8,46 @@
     width: 100%;
     opacity: 0.05;
   }
-  .skill {
-    padding: 10px 40px;
-    color: rgb(235, 218, 199);
-  }
 }
 
 #name-svg {
-  margin-bottom: 10%;
-  margin-top: 10%;
-  width: 90vw;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  &-path {
+  width: 60vw;
+  text-align: center;
+  margin: 24px 20vw;
+  height: fit-content;
+}
+
+.header {
+  &-subtitle {
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+  }
+  &-greeting {
+    font-size: 3vw;
+    line-height: normal;
+    animation: fadeIn linear 3s;
+    color: #deb073;
+  }
+  &-profession {
+    font-size: 4vw;
+    line-height: normal;
+    animation: fadeIn linear 3s;
+    color: rgb(143,130,114);
+  }
+  &-slogan {
+    color: rgb(219, 186, 140);
+    animation: fadeIn linear 3s;
+    font-size: 2.5vw;
+    padding-top: 15px;
+  }
+  &-text {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
   }
 }
 
-.flex-container {
-  position: absolute;
-  width: 100vw;
-  margin-top: 8%;
-  display: flex;
-  flex-direction: row;
-  font-size: x-large;
-  font-family: "Mulish", sans-serif;
-}
-
-#skills-background {
-  margin-top: 8%;
-  position: absolute;
-  width: 100vw;
-  height: 60px;
-  background-color: white;
-  opacity: 0.1;
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

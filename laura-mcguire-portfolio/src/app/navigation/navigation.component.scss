@@ -1,0 +1,25 @@
+.navigation {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(44, 58, 58);
+    animation: fadeIn linear 3s;
+    padding: 20px;
+    z-index: 1;
+}
+
+button {
+    font-family: "Mulish", sans-serif;
+}
+
+#resume {
+    margin-left: 10px;
+    padding-right: 22px;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

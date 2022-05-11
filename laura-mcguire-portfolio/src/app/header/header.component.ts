@@ -21,35 +21,5 @@ export class HeaderComponent implements OnInit {
       direction: 'alternate',
       loop: false,
     });
-    anime({
-      targets: '#angular',
-      translateX: -100,
-      direction: 'reverse',
-      easing: 'easeInOutSine',
-    });
-    anime({
-      targets: '#express',
-      translateX: -200,
-      direction: 'reverse',
-      easing: 'easeInOutSine',
-    });
-    anime({
-      targets: '#node',
-      translateX: -300,
-      direction: 'reverse',
-      easing: 'easeInOutSine',
-    });
-    anime({
-      targets: '#mysql',
-      translateX: -400,
-      direction: 'reverse',
-      easing: 'easeInOutSine',
-    });
-    anime({
-      targets: '#full-stack',
-      translateX: -500,
-      direction: 'reverse',
-      easing: 'easeInOutSine',
-    });
   }
 }
